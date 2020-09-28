@@ -1,0 +1,153 @@
+/* Topo de Informações */
+
+.top-bg{
+    background-color: $white;
+    color: black;
+    font-weight: 500;
+    padding: 5px;
+    box-shadow: 0 2px 0 0 #f5f5f5;
+
+    span{
+        top: 5px;
+    }
+    
+    a{
+        color: $primary;
+    }
+
+    .info{
+        max-width: $max-width;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .wpp{
+            background-color: #127c7e;
+            padding: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            color: white;
+            border-radius: 50px;
+            transition: all 0.3s ease 0s;
+        }
+
+        .wpp:hover{
+            background-color: #075e54;
+        }
+
+        p, a{
+            margin: 10px;
+        }
+    }
+}
+
+/* Fim Topo */
+
+/* Menu */
+.menu-bg{
+    background-color: $white;
+    box-shadow: $box-shadow;
+
+    .menu{
+        max-width: $max-width;
+        margin: 0 auto;
+/*         padding: 15px 0; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+            width: 5%;
+            a{
+                color: black;
+                margin: 0 10px;
+
+                img{
+                    margin: 0 10px;
+                }
+                
+                span{
+                    float: left;
+                    padding-left: 65px;
+                    margin-top: -60px;
+                }
+            }
+        }
+
+        a{
+            color: $primary;
+        }
+
+        .menu-nav{
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                transition: all 0.3s ease 0s; 
+
+                .active{
+                    font-weight: 600;
+                }
+
+                :hover{
+                    font-weight: 600; 
+                }
+            }
+
+            a{
+                font-size: 1.2em;
+                display: block;
+                padding: 10px;
+                color: $secondary;
+            }
+
+
+        }
+    }
+}
+/* Fim Menu */
+
+
+/* Header Content */
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $max-width;
+    margin: 0 auto;
+
+    .introducao{
+        margin: 0 10px;
+
+        h1, h3{
+            font-weight: normal;
+            margin-right: 10px;
+        }
+    }
+
+    .img{
+        min-width: 40%;
+        margin-left: 100px;
+    }
+}
+/* Fim Header content */
+
+@media (max-width: 600px) 
+{
+    .logo span{
+        display: none;
+    } 
+    
+    .header-content{
+        flex-wrap: wrap;
+
+        h1, h3{
+            margin-top: 20px
+        }
+
+        .img{
+            margin: 0 10px;
+        }
+    }
+}

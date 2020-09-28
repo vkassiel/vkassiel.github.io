@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap");
+@import url("https://unpkg.com/jam-icons/css/jam.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
+/* Definindo variáveis */
+/* Colors */
+/* Tamanhos */
+/* Ouros */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo 2", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Topo de Informações */
+.top-bg {
+  background-color: #ffff;
+  color: black;
+  font-weight: 500;
+  padding: 5px;
+  box-shadow: 0 2px 0 0 #f5f5f5;
+}
+.top-bg span {
+  top: 5px;
+}
+.top-bg a {
+  color: #006df0;
+}
+.top-bg .info {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bg .info .wpp {
+  background-color: #127c7e;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+  border-radius: 50px;
+  transition: all 0.3s ease 0s;
+}
+.top-bg .info .wpp:hover {
+  background-color: #075e54;
+}
+.top-bg .info p, .top-bg .info a {
+  margin: 10px;
+}
+
+/* Fim Topo */
+/* Menu */
+.menu-bg {
+  background-color: #ffff;
+  box-shadow: 0 2px 0 0 #f5f5f5;
+}
+.menu-bg .menu {
+  max-width: 960px;
+  margin: 0 auto;
+  /*         padding: 15px 0; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-bg .menu .logo {
+  width: 5%;
+}
+.menu-bg .menu .logo a {
+  color: black;
+  margin: 0 10px;
+}
+.menu-bg .menu .logo a img {
+  margin: 0 10px;
+}
+.menu-bg .menu .logo a span {
+  float: left;
+  padding-left: 65px;
+  margin-top: -60px;
+}
+.menu-bg .menu a {
+  color: #006df0;
+}
+.menu-bg .menu .menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.3s ease 0s;
+}
+.menu-bg .menu .menu-nav ul .active {
+  font-weight: 600;
+}
+.menu-bg .menu .menu-nav ul :hover {
+  font-weight: 600;
+}
+.menu-bg .menu .menu-nav a {
+  font-size: 1.2em;
+  display: block;
+  padding: 10px;
+  color: #4a4a4a;
+}
+
+/* Fim Menu */
+/* Header Content */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.header-content .introducao {
+  margin: 0 10px;
+}
+.header-content .introducao h1, .header-content .introducao h3 {
+  font-weight: normal;
+  margin-right: 10px;
+}
+.header-content .img {
+  min-width: 40%;
+  margin-left: 100px;
+}
+
+/* Fim Header content */
+@media (max-width: 600px) {
+  .logo span {
+    display: none;
+  }
+
+  .header-content {
+    flex-wrap: wrap;
+  }
+  .header-content h1, .header-content h3 {
+    margin-top: 20px;
+  }
+  .header-content .img {
+    margin: 0 10px;
+  }
+}
+footer {
+  background-color: #ffff;
+  box-shadow: 0 -2px 0 0 #f5f5f5;
+  margin-top: 60px;
+  padding: 20px;
+}
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.form {
+  margin-top: 50px;
+  font-family: "Baloo 2", sans-serif;
+}
+.form input, .form textarea {
+  font-family: "Baloo 2", sans-serif;
+  font-size: 16px;
+}
+.form input::placeholder, .form textarea::placeholder {
+  font-size: 16px;
+  color: #bdbdbd;
+}
+.form label {
+  display: block;
+  font-weight: bold;
+}
+.form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #9e9e9e;
+  box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
+}
+.form input:focus {
+  outline: 0px;
+}
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  border: 1px solid #9e9e9e;
+  box-shadow: inset 0 0.0625em 0.125em rgba(10, 10, 10, 0.05);
+  resize: none;
+}
+.form textarea:focus {
+  outline: none;
+}
+.form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  float: right;
+  transition: all 0.3s ease 0s;
+}
+.form button:hover {
+  background-color: #4a4a4a;
+}
+
+/*# sourceMappingURL=style.css.map */
