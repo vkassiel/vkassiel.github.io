@@ -4,39 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vkassiel &#8211; Project list</title>
+
+    <link rel="icon" type="image/svg" href="code.svg">
 </head>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
 
 *{
     margin: 0;
     padding: 0;
 }
-
 body{
     font-family: 'Baloo 2', sans-serif;
 }
-
 main{
     max-width: 690px;
     margin: 0 auto;
     margin-top: 50px;
 }
-
 main .item{
     margin-bottom: 30px;
     padding: 20px;
 }
-
 main .item ul{
-    margin-top: 20px;
-    padding: 20px;
+    padding: 0 20px;
 }
-
+main .item ul li{
+    margin-top: 30px;
+}
 a{
     color: black;
     font-weight: bold;
+}
+.langs{
+    margin-top: 5px;
+}
+.badge{
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+}
+.badge:hover{
+    opacity: 0.5;
+}
+.badge.html{
+    background-color: #e34c26;
+    color: #ffffff;
+}
+.badge.css{
+    background-color: #264de4;
+    color: #ffffff;
+}
+.badge.js{
+    background-color: #f0db4f;
+    color: #323330;
 }
 </style>
 
@@ -54,10 +79,28 @@ a{
             <h1>My projects</h1>
             <hr>
             <ul>
-                <li>
+                <li class="animate__animated animate__fadeInLeft">
                     <a href="/devweb-vitor" target="_blank">SaveBears</a>
                     <br>
                     <span>A micro project from Web Development Class, using a forms properties.</span>
+                    <br>
+
+                    <div class="langs">
+                        <span class="badge html"><i class="fab fa-html5"></i> HTML</span>
+                        <span class="badge css"><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span class="badge js"><i class="fab fa-js-square"></i> JS</span>
+                    </div>
+                </li>
+
+                <li class="animate__animated animate__fadeInLeft">
+                    <a href="#" target="_blank">NodeJS WhatsApp Chatbot (In progress)</a>
+                    <br>
+                    <span>A micro project from Advanced Algorithm Class, using a nodeJS and VenomBot.</span>
+                    <br>
+
+                    <div class="langs">
+                        <span class="badge js"><i class="fab fa-js-square"></i> JS</span>
+                    </div>
                 </li>
             </ul>
         </div>
