@@ -133,21 +133,3 @@
 }
 /* Fim Header content */
 
-@media (max-width: 600px) 
-{
-    .logo span{
-        display: none;
-    } 
-    
-    .header-content{
-        flex-wrap: wrap;
-
-        h1, h3{
-            margin-top: 20px
-        }
-
-        .img{
-            margin: 0 10px;
-        }
-    }
-}

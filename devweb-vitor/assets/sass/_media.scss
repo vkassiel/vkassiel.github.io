@@ -1,0 +1,27 @@
+@media (max-width: 600px) 
+{
+    .logo{
+        margin: 0 auto;
+
+        span{
+            display: none;
+        }
+    }
+    .header-content{
+        flex-wrap: wrap;
+
+        .introducao{
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1{
+            margin-top: 20px
+        }
+
+        .img{
+            margin: 0 auto;
+        }
+    }
+
+}
