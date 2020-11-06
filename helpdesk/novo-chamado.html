@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpDesk &#8211; Novo chamado</title>
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="public/bulma/css/bulma.min.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-dark navbar is-spaced" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="public/img/logo.png" width="32" style="padding-right: 5px;">
+                    App <strong>HelpDesk</strong>
+                </a>
+            </div>
+
+            <div class="navbar-start">
+                <a href="index.html" class="navbar-item">Página Inicial</a>
+                <a href="novo-chamado.html" class="navbar-item">Novo chamado</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a href="#" class="button is-danger is-rounded">
+                            <strong>Logoff</strong>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+    </nav>
+    <!-- Fim Navbar -->
+
+    <!-- Breadcrumb -->
+    <div class="container mt-5">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="#"><strong>AppDesk</strong></a></li>
+                <li><a href="#">Chamados</a></li>
+                <li class="is-active"><a href="#">Novo chamado</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Fim Breadcrumb -->
+
+    <!-- Header -->
+    <div class="container mt-5">
+        <div class="bd-header-titles">
+            <h1 class="title">Novo chamado</h1>
+            <p class="subtitle is-8" style="color: #7a7a7a;">Enviar <strong>nova dúvida</strong> ao HelpDesk</p>
+        </div>
+    </div>
+    <!-- Fim Header -->
+
+
+    <div class="container mt-5">
+        <div class="box">
+
+            <div class="field">
+                <label for="" class="label">Título</label>
+                <div class="control">
+                    <input class="input is-rounded" type="text" placeholder="Insira o título do seu chamado">
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="" class="label">Categoria</label>
+                <div class="control mb-3">
+                    <div class="control">
+                        <div class="select is-rounded">
+                            <select>
+                                <option>Selecione uma categoria</option>
+                                <option>With options</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label for="" class="label">Descrição</label>
+                <div class="control">
+                    <textarea class="textarea is-rounded" placeholder="Descreva um pouco a sua dúvida"></textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <button class="button is-info is-rounded mt-3">Enviar chamado</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="container mt-6 mb-5">
+        <center>
+            <small>
+                &copy; HelpDesk &#8211; 2020.
+                Developed by Vitor Kassiel
+            </small>
+
+        </center>
+    </div>
+    <!-- Fim Footer -->
+</body>
+
+</html>
