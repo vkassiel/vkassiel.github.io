@@ -1,112 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vkassiel &#8211; Project list</title>
+    <meta name="title" content="Vitor Kassiel">
+    <meta name="description" content="Veja um pouco mais sobre mim, meus projetos e quais tecnologias utilizo.">
+    <meta name="keywords" content="dev, programador teresina, laravel, php, nodejs">
+    <title>Vitor Kassiel</title>
 
-    <link rel="icon" type="image/svg" href="code.svg">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css");
-
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: 'Baloo 2', sans-serif;
-}
-main{
-    max-width: 690px;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-main .item{
-    margin-bottom: 30px;
-    padding: 20px;
-}
-main .item ul{
-    padding: 0 20px;
-}
-main .item ul li{
-    margin-top: 30px;
-}
-a{
-    color: black;
-    font-weight: bold;
-}
-.langs{
-    margin-top: 5px;
-}
-.badge{
-    padding: 2px 10px;
-    border-radius: 3px;
-    font-weight: 600;
-    transition: all 0.3s ease 0s;
-}
-.badge:hover{
-    opacity: 0.5;
-}
-.badge.html{
-    background-color: #e34c26;
-    color: #ffffff;
-}
-.badge.css{
-    background-color: #264de4;
-    color: #ffffff;
-}
-.badge.js{
-    background-color: #f0db4f;
-    color: #323330;
-}
-</style>
-
 <body>
+    <header>
+        <section class="hero is-info is-fullheight is-bold">
+            <div class="hero-body">
+                <div class="container is-fluid has-text-centered">
+                    <h1 data-aos="fade-right" class="title">Vitor Kassiel</h1>
+                    <h2 data-aos="fade-left" class="subtitle">
+                        Aspiring developer
+                    </h2>
 
-    <main>
-        <div class="item">
-            <h1>About</h1>
-            <p>
-            My name is Vitor, I am 20 years old and I study Computer Science. I am in love with Front-end and lover of Back-end. I like to use tools like SASS, programming languages like JavaScript and PHP and I try to improve all the time. 
-            </p>
-        </div>
-    
-        <div class="item">
-            <h1>My projects</h1>
-            <hr>
-            <ul>
-                <li class="animate__animated animate__fadeInLeft">
-                    <a href="/devweb-vitor" target="_blank">SaveBears</a>
-                    <br>
-                    <span>A micro project from Web Development Class, using a forms properties.</span>
-                    <br>
+                    <a data-aos="flip-up" class="button is-info is-inverted is-outlined"
+                        href="https://www.linkedin.com/in/vitor-kassiel-006a1a1b3/" target="_blank">
+                        <i class='jam jam-linkedin-square'></i>
+                        LinkedIn</a>
+                    <a data-aos="flip-up" class="button is-info is-inverted is-outlined"
+                        href="http://github.com/vkassiel" target="_blank">
+                        <i class='jam jam-github-square'></i>
+                        GitHub</a>
 
-                    <div class="langs">
-                        <span class="badge html"><i class="fab fa-html5"></i> HTML</span>
-                        <span class="badge css"><i class="fab fa-css3-alt"></i> CSS</span>
-                        <span class="badge js"><i class="fab fa-js-square"></i> JS</span>
+                    <!-- <p>Mais detalhes? Veja meu <strong>perfil profissional</strong>!</p> -->
+                    <!-- <p>Scroll down!</p> -->
+                    <p data-aos="zoom-in">Mais detalhes?</p>
+                    <p class="chevronDown">
+                        <a onclick="scrollDown()">
+                            <i class="jam jam-chevron-circle-down"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main id="down">
+        <!-- About -->
+        <section data-aos="zoom-in" class="section">
+            <div class="container is-fluid">
+                <div class="content">
+                    <h1>Sobre</h1>
+                    <p>Acadêmico de Ciência da Computação desde 2019, apaixonado por tecnologia, especialmente na área
+                        de desenvolvimento de aplicações e de soluções tecnológicas.</p>
+                </div>
+            </div>
+        </section>
+        <!-- End About -->
+
+        <!-- Projects -->
+        <section data-aos="zoom-in" class="section">
+            <div class="container is-fluid">
+                <div class="content">
+                    <h1>Projetos</h1>
+                    <p>Meus principais projetos, alguns já finalizados e outros ainda em andamento. Você pode conferir
+                        todos no <a target="_blank" href="http://github.com/vkassiel"><strong>GitHub</strong></a>!</p>
+                </div>
+
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">Sistema de Gerenciamento de Consultório — API</p>
+                        <div class="card-header-icon pull-right">
+                            <a target="_blank" href="https://github.com/vkassiel/siscon-api" class="button"><span
+                                    class="icon"><i class="jam jam-github-square"></i></span>
+                                <span>Ver código</span></a>
+                        </div>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <p>Projeto de estudo, criação de API de um consultório utilizando Laravel e PHP.</p>
+                        </div>
+                        <strong>Clone o repositório</strong>
+                        <br>
+                        <code>
+                            <strong>$</strong> git clone github.com/vkassiel/siscon-api
+                        </code>
                     </div>
-                </li>
 
-                <li class="animate__animated animate__fadeInLeft">
-                    <a href="#" target="_blank">NodeJS WhatsApp Chatbot (In progress)</a>
-                    <br>
-                    <span>A micro project from Advanced Algorithm Class, using a nodeJS and VenomBot.</span>
-                    <br>
 
-                    <div class="langs">
-                        <span class="badge js"><i class="fab fa-js-square"></i> JS</span>
+                </div>
+
+                <br>
+
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">Chatbot</p>
+                        <div class="card-header-icon pull-right">
+                            <a target="_blank" href="https://github.com/vkassiel/wppchatbot-nodejs" class="button"><span
+                                    class="icon"><i class="jam jam-github-square"></i></span>
+                                <span>Ver código</span></a>
+                        </div>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <p>Um projeto simples usando JavaScript, Node.js e a biblioteca Venom-bot.</p>
+                        </div>
+                        <strong>Clone o repositório</strong>
+                        <br>
+                        <code>
+                            <strong>$</strong> git clone github.com/vkassiel/wppchatbot-nodejs
+                        </code>
                     </div>
-                </li>
-            </ul>
-        </div>
+
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End Projects -->
+
+        <!-- Techs -->
+        <section data-aos="zoom-in" class="section">
+            <div class="container is-fluid">
+                <div class="content">
+                    <h1>Tecnologias</h1>
+                    <p>Principais tecnologias que possuo conhecimento e que costumo utilizar em meus projetos.</p>
+                </div>
+
+                <div class="techs">
+                    <figure>
+                        <img height="32" width="32"
+                            src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/node-dot-js.svg" />
+                        <figcaption>Node.js</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img height="32" width="32"
+                            src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/laravel.svg" />
+                        <figcaption>Laravel</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img height="32" width="32"
+                            src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/vue-dot-js.svg" />
+                        <figcaption>Vue.js</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/sass.svg" />
+                        <figcaption>Sass</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img height="32" width="32"
+                            src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/html5.svg" />
+                        <figcaption>HTML5</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/css3.svg" />
+                        <figcaption>CSS3</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img height="32" width="32"
+                            src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/javascript.svg" />
+                        <figcaption>JavaScript</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/php.svg" />
+                        <figcaption>PHP</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Techs-->
     </main>
-    
 
-    
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                Feito com <span style="color: red"><i class="jam jam-heart-f"></i></span> por <strong>Vitor</strong></p>
+        </div>
+    </footer>
+
+
+
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+</script>
+<script>
+    AOS.init()
+
+    function scrollDown() {
+        var element = document.getElementById('down');
+
+        element.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }
+</script>
+
 </html>

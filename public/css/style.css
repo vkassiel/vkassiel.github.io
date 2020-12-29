@@ -1,0 +1,96 @@
+@import url("../bulma/css/bulma.css");
+@import url("https://cdn.jsdelivr.net/npm/jam-icons@2.0.0/css/jam.min.css");
+i.jam.jam {
+  font-size: 19px;
+}
+
+div.hero-body p {
+  padding-top: 1.5rem;
+}
+div.hero-body i.jam.jam {
+  padding-right: 5px;
+}
+div.hero-body a {
+  color: white;
+}
+
+strong {
+  color: #209cee;
+}
+
+.chevronDown {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  color: #4a4a4a;
+  max-width: 100%;
+  position: relative;
+}
+.card .card-header {
+  align-items: stretch;
+  box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
+  display: flex;
+}
+
+code {
+  background: #363636;
+  color: #C1D1D9;
+  border-radius: 5px;
+}
+code strong {
+  font-weight: normal;
+  color: white;
+}
+
+.techs {
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-gap: 10px;
+}
+.techs figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.techs figure figcaption {
+  padding-top: 5px;
+  font-size: 11px;
+}
+
+footer.footer {
+  background: none;
+}
+
+/*# sourceMappingURL=style.css.map */
