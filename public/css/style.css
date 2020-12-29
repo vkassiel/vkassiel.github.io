@@ -1,4 +1,4 @@
-@import url("../bulma/css/bulma.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css");
 @import url("https://cdn.jsdelivr.net/npm/jam-icons@2.0.0/css/jam.min.css");
 i.jam.jam {
   font-size: 19px;
