@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payload Extractor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.9.359/build/pdf.min.js"></script>
+</head>
+
+<body class="background-color: #f7f7f7 !important">
+    <section class="section">
+        <div class="container">
+            <div class="columns is-desktop is-vcentered is-centered">
+                <div class="column is-5">
+                    <div class="box">
+                        <p class="title is-4">Payload Extractor</p>
+                        <p class="subtitle is-6">Extraia uma payload através do metadata do PDF</p>
+                        <hr>
+                        <!-- Output Message -->
+                        <article id="outputMessage" class="message" style="opacity: 0%;">
+                            <div id="outputMessageText" class="message-body"></div>
+                        </article>
+                        <!-- Output message -->
+                        <!-- Input file area -->
+                        <div id="inputArchiveArea" style="display: initial;">
+                            <!-- Spongebob Figure -->
+                            <figure style="width: 37% !important; margin: 0 auto; filter: grayscale(100%);">
+                                <img src="./assets/images/bob-square.png" alt="">
+                            </figure>
+                            <!-- End Spongebob Figure -->
+                            <hr>
+                            <!-- Input Button -->
+                            <div class="buttons is-centered">
+                                <input id="pdfInput" type="file" style="display: none;">
+                                <button class="button is-info" onclick="inputButtonInit()">Procurar</button>
+                            </div>
+                            <!-- End Input Button -->
+                            <p class="subtitle is-7 has-text-centered" style="opacity: 50%;"><b>Maximum file size
+                                    is:</b> 261mb not tested</p>
+                        </div>
+                        <!-- End input file area-->
+                        <!-- Payload return area -->
+                        <div id="outputPayloadArea" style="display: none;">
+                            <textarea readonly style="resize: none !important;" class="textarea is-small" id="payload"
+                                cols="30" rows="5"></textarea>
+                            <div class="buttons is-centered">
+                                <button class="button is-primary mt-5" onclick="copyToClipboard()">Copiar para a área de
+                                    transferência</button>
+                                <button class="button mt-5" onclick="location.reload()">Reiniciar</button>
+                            </div>
+                        </div>
+                        <!-- End payload return area -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="./assets/js/main.js"></script>
+
+</html>
