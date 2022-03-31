@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Funções — Diagrama de Pareto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(248, 248, 248) !important;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-7">
+                <div class="col-sm-2 mx-auto d-block">
+                    <img class="img-thumbnail mb-2" style="background: none; border: none;"
+                        src="https://chefestrela.com.br/wp-content/uploads/2020/05/estacio-logo-1.png" alt="">
+                </div>
+
+                <div class="text-center">
+                    <small class="text-muted">
+                        <p>
+                            FACULDADE ESTÁCIO TERESINA
+                            <br>
+                            ANÁLISE DE FUNÇÕES - PROFESSOR GILVAN DUARTE
+                            <br>
+                            <b>VITOR KASSIEL ARAUJO ALMEIDA - 201908354488</b>
+
+                            <div class="btn-group-sm" role="group">
+                                <button type="button" class="btn btn-dark" data-bs-target="#carouselExampleControls"
+                                    data-bs-slide="prev">Anterior</button>
+                                <button type="button" class="btn btn-dark" data-bs-target="#carouselExampleControls"
+                                    data-bs-slide="next">Próximo</button>
+                            </div>
+                        </p>
+                    </small>
+                </div>
+
+                <small class="text-muted">Para pausar o slide e facilitar sua leitura, mantenha o mouse em cima do
+                    card.</small>
+
+                <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner shadow-lg">
+                        <div class="carousel-item active">
+                            <div class="card" style="height: 30rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Introdução</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Contextualizando o problema</h6>
+                                    <p class="card-text">
+                                    <p> O diagrama em questão leva em consideração o cotidiano de uma empresa anônima de
+                                        tecnologia
+                                        em que seus desenvolvedores possuem problemas recorrentes envolvendo atraso na
+                                        entrega das
+                                        demandas.
+                                    </p>
+
+                                    <p> Imagine que o principal produto da empresa fique alocado em uma caixa. Sempre
+                                        que surge uma
+                                        nova demanda em que o desenvolvedor precisa adicionar uma nova funcionalidade ou
+                                        dar
+                                        manutenção nas existentes, isso será feito primeiramente fora dessa caixa, e em
+                                        seguida, as
+                                        alterações serão jogadas para dentro dela.
+                                    </p>
+
+                                    <p> Contudo, para você incluir essas alterações você precisa passar antes pela
+                                        inspeção do
+                                        supervisor. Ele irá verificar se o que foi feito está de acordo com o padrão
+                                        estipulado pela
+                                        empresa.
+                                    </p>
+
+                                    <p> Dito isso, <b>precisamos avaliar as causas e ordenar a frequência</b> dos
+                                        motivos que estão fazendo
+                                        com que as alterações no produto da empresa não
+                                        sejam aceitas pelo supervisor e
+                                        acabe resultando no atraso na entrega para o cliente.
+                                    </p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="height: 33rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dados</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Contextualizando e explicando os dados obtidos</h6>
+                                    <p class="card-text">
+                                    <p> Para entender melhor, listamos as principais causas que impedem com que
+                                        as alterações sejam aceitas:
+                                    </p>
+
+                                    <p>
+                                        <span class="badge bg-danger">DICA</span>
+                                        <small class="text-muted">Você pode interagir com os dados clicando com o mouse.</small>
+                                    </p>
+
+                                    <ul>
+                                        <li><button type="button" data-toggle="popover" class="btn btn-primary mb-1" data-bs-toggle="popover" data-bs-content="Quando o que foi feito NÃO de acordo com o que é solicitado">Conformidade</button></li>
+                                        <li><button type="button" data-toggle="popover" class="btn btn-primary mb-1" data-bs-toggle="popover" data-bs-content="Quando o que foi feito NÃO está de acordo com padrões de segurança">Integridade</button></li>
+                                        <li><button type="button" data-toggle="popover" class="btn btn-primary mb-1" data-bs-toggle="popover" data-bs-content="Quando o que foi feito NÃO está de acordo com padrões de nomes, sintaxe de código e organização">Padrão de código</button></li>
+                                        <li><button type="button" data-toggle="popover" class="btn btn-primary mb-1" data-bs-toggle="popover" data-bs-content="Quando o que foi feito NÃO foi validado por quem fez">Ausência de testes</button></li>
+                                        <li><button type="button" data-toggle="popover" class="btn btn-primary mb-1" data-bs-toggle="popover" data-bs-content="Quando o que foi feito NÃO foram ou não estão bem documentadas">Ausência de documentação</button></li>
+                                    </ul>
+
+                                    <p>
+                                        No contexto de desenvolvimento, é imprescindível que o profissional saiba o que
+                                        está fazendo, escreva bons testes,
+                                        siga bons padrões de código e principalmente que documente bem o que foi feito,
+                                        visando sempre facilitar futuras manutenções.
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="height: 44rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Diagrama de Pareto</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Ordenando as frequências das ocorrências
+                                    </h6>
+                                    <p class="card-text justify-content-center">
+                                        <span class="badge bg-danger">DICA</span>
+                                        <small class="text-muted">Você pode interagir com os dados do gráfico com o mouse.</small>
+
+                                        <iframe width="600" height="371" seamless frameborder="0" scrolling="no"
+                                            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRJM8f9WJCuTZVDai0RwrA3r9Ab47a6aoneGYU1nwBAJmhSgQnh7WfSYuufiaP9aXhk31lqskbUTrfU/pubchart?oid=236599006&amp;format=interactive"></iframe>
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">O que ocasionou a devolução?</th>
+                                                <th scope="col">Ocorrência</th>
+                                                <th scope="col">Acumulada</th>
+                                                <th scope="col">Percentual Acumulado (%)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">Código sem testes</td>
+                                                <td>8</td>
+                                                <td>8</td>
+                                                <td>34,78%</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">Padrão de código</td>
+                                                <td>6</td>
+                                                <td>14</td>
+                                                <td>60,87%</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">Conformidade</td>
+                                                <td>5</td>
+                                                <td>19</td>
+                                                <td>82,61%</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">Falta de documentação</td>
+                                                <td>3</td>
+                                                <td>22</td>
+                                                <td>95,65%</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">Integridade de código</td>
+                                                <td>1</td>
+                                                <td>23</td>
+                                                <td>100,00%</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="height: 30rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Conclusão</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">O que podemos concluir baseado no gráfico
+                                    </h6>
+                                    <p class="card-text justify-content-center">
+
+                                        <p>
+                                            Os agentes causadores da falha na inspeção do supervisor e consequentemente no atraso nas entregas das demandas são respectivamente 
+                                            <b>Código sem testes</b>, <b>Padrão de código</b> e <b>Conformidade</b>. Juntos eles são responsáveis por <b>82,61%</b> dos atrasos
+                                            dos <b>23 casos listados no total</b>.
+                                        </p>
+
+                                        <table class="table table-sm">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">O que ocasionou a devolução?</th>
+                                                    <th scope="col">Ocorrência</th>
+                                                    <th scope="col">Acumulada</th>
+                                                    <th scope="col">Percentual Acumulado (%)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td scope="row">Código sem testes</td>
+                                                    <td>8</td>
+                                                    <td>8</td>
+                                                    <td>34,78%</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td scope="row">Padrão de código</td>
+                                                    <td>6</td>
+                                                    <td>14</td>
+                                                    <td>60,87%</td>
+                                                </tr>
+    
+                                                <tr>
+                                                    <td scope="row">Conformidade</td>
+                                                    <td>5</td>
+                                                    <td>19</td>
+                                                    <td><span class="badge bg-primary">82,61%</span></td>
+                                                </tr>
+    
+                                            </tbody>
+                                        </table>
+
+                                        <p>
+                                            Se conseguirmos melhor principalmente nesses pontos, conseguiremos sanar o problema com a inspeção e com o atraso nas entregas.
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
+
+</html>
